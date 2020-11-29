@@ -1,0 +1,11 @@
+.honors_container {
+  width: 70%;
+  margin: 2rem auto;
+}
+.honors_container img {
+  transition: all 0.15s ease-in-out;
+}
+
+.honors_container img:hover {
+  transform: scale(0.95);
+}

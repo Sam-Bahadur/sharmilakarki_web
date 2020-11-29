@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&display=swap");
+
+.nav_banner {
+  /* position: sticky;*/
+  display: flex;
+  background: rgb(48, 48, 48);
+  min-height: 8vh;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Ubuntu";
+  position: relative;
+  z-index: 5;
+}
+
+.nav_banner .navlogo {
+  flex-shrink: 2;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact_container {
+  flex-shrink: 2;
+  margin-right: 2%;
+  display: flex;
+  justify-content: space-around;
+  /* background: teal; */
+}
+.navlogo img {
+  width: 4vw;
+}
+
+.navlogo span {
+  color: rgb(255, 237, 228);
+}
+
+.navlogo a:hover {
+  text-decoration: none;
+}
+
+.dropdown {
+  /* overflow: hidden; */
+  background: rgb(48, 48, 48);
+}
+
+.dropdown button {
+  padding: 0;
+}
+
+.navbar {
+  flex-shrink: 1;
+  /* background: teal; */
+  margin-left: auto;
+  margin-right: calc(1rem + 1%);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  animation-name: slidedown;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+@keyframes slidedown {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.navbar li {
+  list-style: none;
+  margin-right: 1.3rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-style: bolder;
+  letter-spacing: 2px;
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar span {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar li::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0rem;
+  left: 0;
+  transition: width 0.15s ease-in-out;
+}
+.navbar li:hover::after {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -2rem;
+  top: 1.4rem;
+  z-index: 5;
+  background: rgb(48, 48, 48);
+  min-width: max-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  line-height: 4rem;
+  padding: 1rem 1rem;
+  animation-name: drop;
+  animation-duration: 0.2s;
+  transform-origin: top;
+}
+@keyframes drop {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  padding: 0.5rem 1rem;
+}
+.dropdown-content a:hover {
+  /* background: rgb(109, 109, 109); */
+  background: teal;
+  border-radius: 10px;
+}
+.dropbtn {
+  background: rgb(48, 48, 48);
+  color: #fff;
+  letter-spacing: 1px;
+  border: 0;
+  font-family: "Ubuntu";
+}
+
+.dropbtn span {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+.custom_select select {
+  background: rgb(48, 48, 48);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  border: 0;
+}
+
+.contact_container a {
+  background: rgb(78, 78, 78);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  letter-spacing: 1px;
+  transition: background 0.2s ease-in-out;
+}
+.contact_container a:hover {
+  background: teal;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.navlogo_text span {
+  font-family: "Kaushan Script", cursive;
+  font-size: calc(1.5rem + 1vw);
+}
+.navbar a {
+  /* text-decoration: none; */
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.burger {
+  align-self: flex-end;
+  cursor: pointer;
+  color: whitesmoke;
+  display: none;
+}
+.nav_link {
+  position: relative;
+}
+.nav_active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1282px) {
+  .navbar li {
+    letter-spacing: 1px;
+    font-size: calc(1vh + 0.3rem);
+  }
+  .dropbtn {
+    font-size: calc(1vh + 0.3rem);
+  }
+
+  .navlogo span {
+    font-family: "Sansita Swashed", cursive;
+    font-size: calc(1rem + 1.4vw);
+    color: rgb(255, 237, 228);
+  }
+  .dropdown-content {
+    left: -6rem;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown button {
+    margin: 0;
+    padding: 0;
+  }
+  .nav_banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav_banner ul {
+    flex-direction: column;
+    align-content: center;
+  }
+  .burger {
+    display: block;
+  }
+  .navlogo img {
+    width: 10vw;
+  }
+  .navlogo_text span {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav_banner ul {
+    flex-direction: column;
+    align-content: center;
+  }
+}

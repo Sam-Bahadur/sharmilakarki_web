@@ -1,0 +1,41 @@
+.publication-container {
+  width: 70%;
+  margin: 2rem auto;
+}
+.publication-container ul {
+  line-height: 2rem;
+}
+
+.publication-container ul li {
+  list-style: none;
+  text-indent: -2.5rem;
+  font-size: var(--title2);
+  color: teal;
+}
+.publication-container span {
+  color: black;
+  font-size: var(--title2);
+}
+
+.publication-container a {
+  text-decoration: none;
+  display: inline;
+  margin-left: 1rem;
+  font-size: var(--title2);
+  color: teal;
+}
+
+.publication-container a:hover {
+  color: darkblue;
+}
+
+@media only screen and (max-width: 768px) {
+  .publication-container {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .publication-container a {
+    font-size: var(--descmobile);
+  }
+}

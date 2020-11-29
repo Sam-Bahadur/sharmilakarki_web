@@ -1,0 +1,45 @@
+abuot me arrow smaller
+about me-> change caption(personal details)
+        -> Government Appointment
+        -> political journey
+        -> Organisations founded
+        -> board of director
+gallary foto add
+add tab-> news, honors
+vitai ko tala 3 ota tab-> Gov Appointment, political journey, download vitae
+upload contnt in above tabs
+contact me-> Contact me-> send message
+footer
+copyright-> sharmilakarki.com
+bottom-right corner-> designed anddeveloped by mayan media
+
+news tab
+-> date- title ani sano desc (prachanda ko jasto)
+
+personal journey3para show- aru chai read more
+
+new task
+-> sharmila karki thichda home ma aune(done)
+-> 3 ota tab 33.33, government apointmen nei lekha(done)
+-> button ko size *1.5(done)
+-> button hover ma teal color(done)
+-> name haru alik lamo
+
+new task
+-> logo_text ko font sano screen ma milne gari(done)
+-> about me ko font same with other nav list(done)
+-> ubuntu 300-> "contact me" ma and sab click garne button ko font()
+-> roboto chai select 300(select)
+-> facebook wala color sab ma different different(done)
+-> font sab consitent (done)
+-> contact ko li ma space ghatau-> name haru ko font sano plus opacity ni sano(done)
+-> about me ko icon sab teal (done)
+-> gallery ko item ko size sano so tthat sano screen ma 3 ota 1 hunu paryo(done)
+-> galry ko foto next hunu paryo(same with honors)
+-> news ko desc  ma chai tillana font use garne reguralr 400/ medium 500
+-> videos ko desc chai bich center align garney(done)
+->mayan media lai ek line tala halnu paro(done)
+-> news ko link ko color dark blue (done)
+-> bullet diamond (done)
+-> ek mukta for future nepali(done)
+

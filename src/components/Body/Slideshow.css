@@ -1,0 +1,14 @@
+.fit {
+  height: 95vh !important;
+  width: 100vw;
+  object-fit: cover;
+  object-position: top;
+}
+@media only screen and (max-width: 768px) {
+  .fit {
+    height: 40vh !important;
+    /* width: 100vw; */
+    object-fit: cover;
+    object-position: top;
+  }
+}

@@ -1,0 +1,44 @@
+.government_container {
+  width: 70%;
+  margin: 1rem auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.government_container h2 {
+  font-size: var(--title);
+  text-indent: -4rem;
+}
+
+.government_container h3 {
+  line-height: 1.5rem;
+  font-size: var(--desc);
+  letter-spacing: 0.5px;
+}
+.government_content {
+  margin: 2rem;
+}
+
+.government_content span {
+  color: rgb(0, 128, 128);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .government_container {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .government_container h3 {
+    font-size: var(--descmobile);
+  }
+  .government_container span {
+    font-size: var(--titlemobile);
+  }
+  .government_container h2 {
+    font-size: var(--titlemobile);
+  }
+  .government_container h6 {
+    font-size: var(--title2mobile);
+  }
+}

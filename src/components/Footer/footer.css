@@ -1,0 +1,70 @@
+.footer {
+  background: rgb(48, 48, 48);
+  padding: 1rem;
+  color: whitesmoke;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  min-height: 5vh;
+}
+.footer div {
+  /* flex: 1; */
+}
+.footer_title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer .empty_div {
+  /* flex-basis: 15%; */
+  /* background: teal;
+  height: 5vh; */
+}
+
+.copyright {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  margin-left: auto;
+  flex-basis: content;
+}
+.footer .media_name {
+  margin-top: -1rem;
+  margin-left: auto;
+  width: max-content;
+}
+
+.footer_content {
+  font-size: 1.2rem;
+}
+
+.footer_container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.media_name span {
+  margin-left: 5px;
+  font-size: 1rem;
+  color: goldenrod;
+}
+
+.footer_content a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer_content a:hover {
+  color: rgb(103, 168, 221);
+}
+
+@media only screen and (max-width: 768px) {
+  .copyright {
+    font-size: var(--descmobile);
+  }
+  .media_name span {
+    font-size: var(--descmobile);
+  }
+}

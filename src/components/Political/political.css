@@ -1,0 +1,39 @@
+.political_container {
+  width: 70%;
+  margin: 1rem auto;
+  /* box-shadow: -4px 0px 0 black; */
+  box-shadow: -4px 0 0px teal;
+}
+.political_flex {
+  display: flex;
+}
+.political_date {
+  min-width: 12ch;
+}
+.political_date {
+  position: relative;
+}
+
+.political_date h3::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 10%;
+  left: -2.8rem;
+  /* background: rgb(48, 48, 48); */
+  background: teal;
+  transform: rotate(45deg);
+}
+
+.political_flex .political_date {
+  /* background: teal; */
+  margin: 2rem;
+}
+.political_flex .political_content {
+  /* background: thistle; */
+  margin: 2rem;
+}
+h3 {
+  font-size: 1.3rem;
+}

@@ -1,0 +1,29 @@
+.organisation_container {
+  width: 70%;
+  margin: 2rem auto;
+}
+.organisation_container span {
+  display: inline;
+  color: teal;
+  font-size: 1.5rem;
+}
+.organisation_container li {
+  list-style: none;
+  text-indent: -4rem;
+}
+
+.organisation_container h3 {
+  font-size: var(--title);
+}
+
+.organisation_container h4 {
+  font-size: var(--title2);
+  text-decoration: none;
+  margin-left: 1rem;
+  display: inline;
+}
+
+.organisation_container h5 {
+  font-size: var(--desc);
+  padding-left: 2rem;
+}
