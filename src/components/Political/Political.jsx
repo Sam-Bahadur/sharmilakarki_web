@@ -73,6 +73,14 @@ export default function Political() {
           <h3>Kathmandu district committee member for CPN. </h3>
         </div>
       </div>
+      <div className="political_flex">
+        <div className="political_date">
+          <h3>2077 BS  </h3>
+        </div>
+        <div className="political_content">
+          <h3>Central Committee Member for CPN. </h3>
+        </div>
+      </div>
     </div>
   );
 }
